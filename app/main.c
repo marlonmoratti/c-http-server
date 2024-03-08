@@ -1,7 +1,8 @@
 #include <stdio.h>
 #include <string.h>
 #include <unistd.h>
-#include "../include/server.h"
+
+#include "../server/include/server.h"
 
 void *handle_request(void *arg) {
     int client_socket_fd = *((int *) arg);
